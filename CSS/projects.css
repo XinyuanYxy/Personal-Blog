@@ -1,0 +1,10 @@
+/* main {
+	height: 800px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} */
+
+#projects {
+	border-bottom: 2px solid black;
+}
