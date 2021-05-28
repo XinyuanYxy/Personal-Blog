@@ -1,0 +1,22 @@
+#index {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#mainpage aside {
+	border: 1px solid black;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+#mainpage aside a {
+	text-decoration: none;
+	color: wheat;
+}
+
+#mainpage aside a:hover {
+	font-size: larger;
+}

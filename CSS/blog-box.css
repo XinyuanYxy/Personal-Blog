@@ -1,0 +1,49 @@
+.blogbox {
+	border: 1px solid gainsboro;
+	max-height: 300px;
+	border-radius: 0.2cm;
+	margin: 5px;
+	padding: 5px;
+	box-shadow: 5px 8px gainsboro;
+	display: grid;
+	grid-template-rows: 1fr 4fr 1fr;
+	grid-template-columns: auto;
+	grid-template-areas: 't' 'm' 'b';
+}
+
+.blogbox,
+.blogbox p,
+.blogbox h3 {
+	width: 250px;
+}
+.blogbox h3 {
+	border-bottom: 1px solid gainsboro;
+	grid-area: t;
+}
+.blogbox p {
+	grid-area: m;
+}
+
+.btn a {
+	width: 80px;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	line-height: 30px;
+	background-color: wheat;
+	padding: 2px;
+	border-radius: 1cm;
+}
+
+.btn a:hover {
+	cursor: pointer;
+	color: wheat;
+	background-color: black;
+}
+
+.btn {
+	grid-area: b;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,3 +1,7 @@
+@import './blog-box.css';
+@import './blog-layout.css';
+@import 'media.css';
+@import './blog-post.css';
 body {
 	margin: 0;
 }
@@ -5,96 +9,53 @@ body {
 header {
 	margin: 0;
 	background-color: whitesmoke;
+	height: 70px;
 }
 
-h1,
-li {
+h1 {
 	font-family: 'Contrail One', cursive;
 	font-size: 40px;
 }
-a {
+h1 a {
 	text-decoration: none;
-	color: inherit;
+	color: black;
 }
-h1,
 h6 {
+	font-family: 'Contrail One', cursive;
+	font-size: 30px;
+}
+nav {
+	height: inherit;
+}
+
+h6,
+nav h1 {
 	margin: 0;
-	padding: 0;
+	height: inherit;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-h1 {
 	transition: 0.3s;
 }
-h1:hover {
+
+nav h1:hover {
 	cursor: pointer;
 	font-size: 45px;
 }
-
-li {
-	display: inline;
-	padding: 0 15px 0 15px;
-	margin: 0;
-	transition: 0.3s;
-}
-
-li:hover {
-	cursor: pointer;
-	color: gray;
-}
-
-#home {
-	border-bottom: 2px solid black;
-}
-
-ul {
-	display: flex;
-	/* flex-direction: ; */
-	justify-content: flex-end;
-	padding: 0 15px 0 0;
-	margin: 0;
-	align-items: center;
-}
-
-nav {
-	height: 70px;
-	display: grid;
-	grid-template-columns: 20% 75%;
-}
-/* main {
-	height: auto;
-} */
-
 footer {
 	margin: 15px;
 }
 
-@media (max-width: 1200px) {
-	header {
-		height: 110px;
-	}
-	header nav {
-		display: grid;
-		grid-template-columns: auto;
-		grid-template-rows: repeat(2, 1fr);
-		grid-template-areas: 'top' 'buttom';
-		justify-self: center;
-	}
-	header h1 {
-		grid-area: top;
-	}
-	header ul {
-		grid-area: buttom;
-		display: flex;
-		justify-content: center;
-	}
-	main {
-		display: grid;
-		grid-template-rows: 100px 300px;
-		grid-template-columns: auto;
-	}
-	main h1 {
-		grid-area: 1/1/1/1;
-	}
+#mainpage {
+	display: grid;
+	grid-template-rows: 80px;
+	grid-template-columns: auto;
+	grid-gap: 5px;
+}
+
+#mainpage aside {
+	grid-row: 1;
+}
+#mainpage section {
+	grid-row: 2;
 }
