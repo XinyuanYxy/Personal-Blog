@@ -1,6 +1,5 @@
 @import './blog-box.css';
 @import './blog-layout.css';
-@import 'media.css';
 @import './blog-post.css';
 body {
 	margin: 0;
@@ -58,4 +57,32 @@ footer {
 }
 #mainpage section {
 	grid-row: 2;
+}
+
+@media screen and (max-width: 650px) {
+	#mainpage aside a {
+		font-size: 20px;
+	}
+	#mainpage aside {
+		display: grid;
+		grid-template-rows: repeat(2, 40px);
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-areas: 'l tl tl tr tr r' 'bl bl bm bm br br';
+	}
+
+	#Jan {
+		grid-area: tl;
+	}
+	#Feb {
+		grid-area: tr;
+	}
+	#Mar {
+		grid-area: bl;
+	}
+	#Apr {
+		grid-area: bm;
+	}
+	#May {
+		grid-area: br;
+	}
 }
